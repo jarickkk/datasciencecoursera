@@ -1,2 +1,2 @@
 # datasciencecoursera
-Homework for the Data Science Specialization courses by Johns Hopkins University
+Personal homework for the Data Science Specialization courses by Johns Hopkins University
