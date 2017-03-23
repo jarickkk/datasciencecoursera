@@ -1,0 +1,2295 @@
+title: Road_Style
+feature-styles:
+
+# белая подложка для тоннелей
+
+- name: tunnels_background
+  rules:
+
+  - name: unclassified_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:m
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: unclassified_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round 
+  - name: unclassified_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: unclassified_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: unclassified_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: unclassified_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.3
+        stroke-linecap: round
+  - name: unclassified_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.07
+        stroke-linecap: round  
+
+  - name: residential_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: residential_2-4
+    zoom: [16, 17]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: residential_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: residential_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: residential_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: residential_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.3
+        stroke-linecap: round
+  - name: residential_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.07
+        stroke-linecap: round
+        
+  - name: trunk_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: trunk_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: trunk_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: trunk_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+
+  - name: motorway_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: motorway_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: motorway_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: motorway_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: motorway_link_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: motorway_link_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.2
+        stroke-linecap: round
+  - name: motorway_link_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 0.8
+        stroke-linecap: round
+        
+  - name: tertiary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 15
+        stroke-linecap: round
+  - name: tertiary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: tertiary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: tertiary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 3.5
+        stroke-linecap: round
+  - name: tertiary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+
+  - name: secondary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 12
+        stroke-linecap: round
+  - name: secondary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: secondary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: secondary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: secondary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+        
+  - name: primary_tunnel_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'primary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 15
+        stroke-dasharray: '3 2'
+  - name: primary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'primary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 11
+        stroke-linecap: round
+        stroke-dasharray: '5 5'
+  - name: primary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'primary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: primary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'primary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'primary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_36-72
+    zoom: [10, 13]
+    filter: ${highway = 'primary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+#  Мосты
+
+  - name: pedestrian_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'pedestrian' AND bridge = 'yes'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 11
+        stroke-linecap: round
+  - name: pedestrian_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'pedestrian' AND bridge = 'yes'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: pedestrian_4-9
+    zoom: [15, 16]
+    filter: ${highway = 'pedestrian' AND bridge = 'yes'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+
+# Тоннели
+
+- name: tunnels
+  rules:
+  
+  - name: unclassified_tunnel_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: unclassified_tunnel_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: unclassified_tunnel_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 4
+        stroke-linecap: round
+# Конкретно на этом масштабном уровне тон заливки дороги чуть приглушен
+  - name: unclassified_tunnel_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: unclassified_tunnel_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'unclassified' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: residential_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: residential_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: residential_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 3
+        stroke-linecap: round
+# Конкретно на этом масштабном уровне тон заливки дороги чуть приглушен
+  - name: residential_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: residential_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'residential' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: tertiary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 12
+        stroke-linecap: round
+  - name: tertiary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: tertiary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0' 
+        stroke-width: 6
+        stroke-linecap: round
+  - name: tertiary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: tertiary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: tertiary_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 0.6
+        stroke-linecap: round
+  - name: tertiary_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 0.3
+        stroke-linecap: round
+  - name: tertiary_144-288
+    zoom: [11, 11]
+    filter: ${highway = 'tertiary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 0.1
+        stroke-linecap: round
+  - name: secondary_tunnel_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 10
+        stroke-linecap: round
+  - name: secondary_tunnel_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: secondary_tunnel_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: secondary_tunnel_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: secondary_tunnel_18-36
+    zoom: [13, 14]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: secondary_tunnel_36-288
+    zoom: [11, 12]
+    filter: ${highway = 'secondary' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: primary_tunnel_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'primary'  AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 11
+        stroke-linecap: round
+  - name: primary_tunnel_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'primary'  AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: primary_tunnel_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'primary'  AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_tunnel_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'primary'  AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: primary_tunnel_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'primary'  AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: trunk_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'trunk' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 14
+        stroke-linecap: round
+  - name: trunk_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'trunk' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 11
+        stroke-linecap: round
+  - name: trunk_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'trunk' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: trunk_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'trunk' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0' 
+        stroke-width: 5
+        stroke-linecap: round
+  - name: trunk_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'trunk' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0' #сделал чуть светлее
+        stroke-width: 2
+        stroke-linecap: round
+
+  - name: motorway_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 14
+        stroke-linecap: round
+  - name: motorway_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 12
+        stroke-linecap: round
+  - name: motorway_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 10
+        stroke-linecap: round
+  - name: motorway_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: motorway_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: motorway_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_144-288
+    zoom: [11, 11]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_288-576
+    zoom: [10, 11]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_576-1152
+    zoom: [9, 10]
+    filter: ${highway = 'motorway' AND (tunnel = 'yes')}
+    symbolizers:
+    - line:
+        stroke-color: '#e0e0e0'
+        stroke-width: 2
+        stroke-linecap: round
+        
+- name: pedestrian_outer_roads
+  rules:
+  - name: cycleway_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'cycleway'}
+    symbolizers:
+    - line:
+        stroke-color: '#d8d8d8'
+        stroke-width: 3
+        stroke-linecap: round
+        stroke-opacity: 0.6
+
+  - name: path_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'path'}
+    symbolizers:
+    - line:
+        stroke-color: '#d8d8d8'
+        stroke-width: 4
+        stroke-linecap: round
+        stroke-opacity: 0.6
+  - name: pedestrian_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#f4f4f4'
+        stroke-width: 7
+        stroke-opacity: 0.6
+        stroke-linecap: round
+  - name: pedestrian_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#f4f4f4'
+        stroke-width: 3
+        stroke-opacity: 0.6
+        stroke-linecap: round
+  - name: pedestrian_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-dasharray: '4 2.5'
+  - name: pedestrian_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: pedestrian_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+- name: service_outer_roads
+  rules:
+
+  - name: service_auto_1-9
+    zoom: [16, 18]
+    filter: ${highway = 'service'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 3
+        stroke-linecap: round
+  - name: service_auto_9-18
+    zoom: [14, 15]
+    filter: ${highway = 'service'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+
+- name: unclassified_outer_roads
+  rules:
+   
+  - name: unclassified_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: unclassified_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round 
+  - name: unclassified_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: unclassified_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: unclassified_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: unclassified_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.3
+        stroke-linecap: round
+  - name: unclassified_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.07
+        stroke-linecap: round  
+
+- name: residential_outer_roads
+  rules:
+
+  - name: residential_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: residential_2-4
+    zoom: [16, 17]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: residential_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: residential_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: residential_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: residential_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.3
+        stroke-linecap: round
+  - name: residential_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#d6d6d6'
+        stroke-width: 0.07
+        stroke-linecap: round
+
+- name: links_inner_roads
+  rules:
+  - name: secondary_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: secondary_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: secondary_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: secondary_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: primary_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: primary_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: primary_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: trunk_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: trunk_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: trunk_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: trunk_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+
+  - name: motorway_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: motorway_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: motorway_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: motorway_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: motorway_link_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: motorway_link_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.2
+        stroke-linecap: round
+  - name: motorway_link_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 0.8
+        stroke-linecap: round
+
+- name: tertiary_outer_roads
+  rules:
+
+  - name: tertiary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 15
+        stroke-linecap: round
+  - name: tertiary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: tertiary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: tertiary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 3.5
+        stroke-linecap: round
+  - name: tertiary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+
+- name: secondary_outer_roads
+  rules:
+  
+  - name: secondary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 12
+        stroke-linecap: round
+  - name: secondary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: secondary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: secondary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 2.5
+        stroke-linecap: round
+  - name: secondary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 1.5
+        stroke-linecap: round
+
+- name: primary_outer_roads
+  rules:
+  
+  - name: primary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'primary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 15
+        stroke-linecap: round
+  - name: primary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'primary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 11
+        stroke-linecap: round
+  - name: primary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'primary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: primary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'primary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'primary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_36-72
+    zoom: [10, 13]
+    filter: ${highway = 'primary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+        
+- name: trunk_outer_roads
+  rules:
+
+
+  - name: trunk_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 16
+        stroke-linecap: round
+  - name: trunk_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 13
+        stroke-linecap: round
+  - name: trunk_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 11
+        stroke-linecap: round
+  - name: trunk_9-18
+    zoom: [14, 15]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: trunk_9-18
+    zoom: [10, 13]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 6
+        stroke-linecap: round
+- name: motorway_outer_roads
+  rules:
+
+  - name: motorway_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 16
+        stroke-linecap: round
+  - name: motorway_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 14
+        stroke-linecap: round
+  - name: motorway_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 12
+        stroke-linecap: round
+  - name: motorway_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: motorway_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4.5
+        stroke-linecap: round
+  - name: motorway_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4.5
+        stroke-linecap: round
+  - name: motorway_144-288
+    zoom: [11, 11]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: motorway_288-576
+    zoom: [10, 11]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: motorway_576-1152
+    zoom: [10, 10]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#ffffff'
+        stroke-width: 4
+        stroke-linecap: round
+
+
+- name: pedestrian_inner_roads
+  rules:
+
+  - name: cycleway_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'cycleway'}
+    symbolizers:
+    - line:
+        stroke-color: '#a0a0a0'
+        stroke-width: 0.3
+        stroke-linecap: round
+        stroke-dasharray: '1 2'
+        stroke-opacity: 0.8
+
+  - name: path_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'path'}
+    symbolizers:
+    - line:
+        stroke-color: '#bfbfbf'
+        stroke-width: 0.5
+        stroke-dasharray: '6 3'
+        stroke-linecap: round
+        stroke-opacity: 0.9
+  - name: pedestrian_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 7
+        stroke-dasharray: '6 5'
+  - name: pedestrian_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 3
+        stroke-dasharray: '5 3'
+  - name: pedestrian_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-dasharray: '4 2.5'
+# Конкретно на этом масштабном уровне тон заливки дороги чуть приглушен
+  - name: pedestrian_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#cccccc'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: pedestrian_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: pedestrian_18-36
+    zoom: [12, 13]
+    filter: ${highway = 'pedestrian'}
+    symbolizers:
+    - line:
+        stroke-color: '#d8d8d8'
+        stroke-width: 0.1
+        stroke-linecap: round
+
+- name: service_inner_roads
+  rules:
+
+  - name: service_auto_1-9
+    zoom: [16, 18]
+    filter: ${highway = 'service'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: service_auto_9-18
+    zoom: [14, 15]
+    filter: ${highway = 'service'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.8
+        stroke-linecap: round
+
+
+- name: unclassified_inner_roads
+  rules:
+
+  - name: unclassified_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: unclassified_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: unclassified_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 4
+        stroke-linecap: round
+# Конкретно на этом масштабном уровне тон заливки дороги чуть приглушен
+  - name: unclassified_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#cccccc'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: unclassified_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'unclassified' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: unclassified_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'unclassified'}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.1
+        stroke-linecap: round
+  - name: unclassified_36-72
+    zoom: [12, 12]
+    filter: ${highway = 'unclassified'}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.05
+        stroke-linecap: round
+
+- name: residential_inner_roads
+  rules:
+  - name: residential_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 8
+        stroke-linecap: round
+  - name: residential_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: residential_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 3
+        stroke-linecap: round
+# Конкретно на этом масштабном уровне тон заливки дороги чуть приглушен
+  - name: residential_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#cccccc'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: residential_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'residential' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: residential_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'residential'}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.1
+        stroke-linecap: round
+  - name: residential_36-72
+    zoom: [11, 12]
+    filter: ${highway = 'residential'}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.05
+        stroke-linecap: round
+
+
+- name: links_inner_roads
+  rules:
+  - name: secondary_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: secondary_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: secondary_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: secondary_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'secondary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: primary_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: primary_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: primary_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: primary_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'primary_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: primary_link_18-72
+    zoom: [13, 14]
+    filter: ${highway = 'primary_link'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.5
+        stroke-linecap: round
+  - name: primary_link_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'primary_link'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.5
+        stroke-linecap: round        
+  - name: trunk_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: trunk_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: trunk_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: trunk_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'trunk_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: trunk_link_18-72
+    zoom: [13, 14]
+    filter: ${highway = 'trunk_link'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.5
+        stroke-linecap: round
+  - name: trunk_link_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'trunk_link'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.5
+        stroke-linecap: round
+
+  - name: motorway_link_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: motorway_link_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 5
+        stroke-linecap: round
+  - name: motorway_link_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: motorway_link_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_link_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'motorway_link' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: motorway_link_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'motorway_link'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.8
+        stroke-linecap: round
+  - name: motorway_link_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'motorway_link'}
+    symbolizers:
+    - line:
+        stroke-color: '#c6c6c6'
+        stroke-width: 0.4
+        stroke-linecap: round
+
+- name: tertiary_inner_roads
+  rules:
+
+  - name: tertiary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 12
+        stroke-linecap: round
+  - name: tertiary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: tertiary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b7b3b3' # заменил цвет, сделав чуть светлее, чем на сотальныз масштабах, потом разобраться
+        stroke-width: 6
+        stroke-linecap: round
+  - name: tertiary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b7b3b3'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: tertiary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 1.5
+        stroke-linecap: round
+  - name: tertiary_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.6
+        stroke-linecap: round
+  - name: tertiary_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.3
+        stroke-linecap: round
+  - name: tertiary_144-288
+    zoom: [11, 11]
+    filter: ${highway = 'tertiary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#e5e5e5'
+        stroke-width: 0.1
+        stroke-linecap: round
+
+- name: secondary_inner_roads
+  rules:
+  - name: secondary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 10
+        stroke-linecap: round
+  - name: secondary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 7
+        stroke-linecap: round
+  - name: secondary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: secondary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: secondary_18-36
+    zoom: [13, 14]
+    filter: ${highway = 'secondary' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 1
+        stroke-linecap: round
+  - name: secondary_36-288
+    zoom: [11, 12]
+    filter: ${highway = 'secondary'}
+    symbolizers:
+    - line:
+        stroke-color: '#dadbd6'
+        stroke-width: 1
+        stroke-linecap: round
+
+- name: primary_inner_roads
+  rules:
+
+  - name: primary_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'primary'  AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 11
+        stroke-linecap: round
+  - name: primary_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'primary'  AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 9
+        stroke-linecap: round
+  - name: primary_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'primary'  AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 6
+        stroke-linecap: round
+  - name: primary_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'primary'  AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: primary_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'primary'  AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 4
+        stroke-linecap: round
+  - name: primary_36-288
+    zoom: [11, 13]
+    filter: ${highway = 'primary'}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: primary_36-288
+    zoom: [10, 10]
+    filter: ${highway = 'primary'}
+    symbolizers:
+    - line:
+        stroke-color: '#b2adad'
+        stroke-width: 1
+        stroke-linecap: round
+
+- name: trunk_inner_roads
+  rules:
+
+  - name: trunk_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'trunk' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#a09d9d'
+        stroke-width: 14
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 12
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: trunk_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'trunk' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2b2b2'
+        stroke-width: 11
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 12
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: trunk_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'trunk' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2b2b2'
+        stroke-width: 8
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 11
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: trunk_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'trunk' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2b2b2' #сделал чуть светлее
+        stroke-width: 5
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 10.5
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1
+          fill-color: '#ffffff'
+  - name: trunk_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'trunk' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#b2b2b2' #сделал чуть светлее
+        stroke-width: 2
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 12
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: trunk_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f' #сделал как на motorway
+        stroke-width: 2
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 11
+        font-family: Roboto Medium
+        placement: line
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1
+          fill-color: '#ffffff'
+  - name: trunk_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f' #сделал как на motorway и толщина с 0.8
+        stroke-width: 2
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 10
+        font-family: Roboto Medium
+        placement: line
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1
+          fill-color: '#ffffff'
+  - name: trunk_72-144
+    zoom: [10, 11]
+    filter: ${highway = 'trunk'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f' #сделал чуть светлее
+        stroke-width: 2
+        stroke-linecap: round
+
+- name: motorway_inner_roads
+  rules:
+  - name: motorway_1-2
+    zoom: [18, 18]
+    filter: ${highway = 'motorway' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 14
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 12
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: motorway_2-4
+    zoom: [17, 17]
+    filter: ${highway = 'motorway' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 12
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 12
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: motorway_4-9
+    zoom: [16, 16]
+    filter: ${highway = 'motorway' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 10
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 11
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: motorway_9-18
+    zoom: [15, 15]
+    filter: ${highway = 'motorway' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 6
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 10.5
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1
+          fill-color: '#ffffff'
+  - name: motorway_18-36
+    zoom: [14, 14]
+    filter: ${highway = 'motorway' AND (tunnel = 'no' OR tunnel IS NULL)}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 4
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 12
+        font-family: Roboto Medium
+        placement: line
+        x-group: true
+        x-partials: true
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1.5
+          fill-color: '#ffffff'
+  - name: motorway_36-72
+    zoom: [13, 13]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 2
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 11
+        font-family: Roboto Medium
+        placement: line
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1
+          fill-color: '#ffffff'
+
+  - name: motorway_72-144
+    zoom: [12, 12]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 2
+        stroke-linecap: round
+    - text:
+        label: ${name}
+        font-size: 10
+        font-family: Roboto Medium
+        placement: line
+        fill-color: '#3f3f3f'
+        x-followLine: true
+        halo:
+          radius: 1
+          fill-color: '#ffffff'
+  - name: motorway_144-288
+    zoom: [11, 11]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_288-576
+    zoom: [10, 11]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 2
+        stroke-linecap: round
+  - name: motorway_576-1152
+    zoom: [9, 10]
+    filter: ${highway = 'motorway'}
+    symbolizers:
+    - line:
+        stroke-color: '#8f8f8f'
+        stroke-width: 2
+        stroke-linecap: round
+
+
+# ЖЕЛЕЗНЫЕ ДОРОГИ
+
+- name: railways_layer
+  rules:
+  
+  - name: main_railway
+    zoom: [17, 18]
+    filter: ${railway = 'rail' and service is NULL}
+    symbolizers:
+    - line:
+        stroke-color: '#8b628c'
+        stroke-width: 1.5
+        stroke-dasharray: '3.5 3.5'
+        stroke-opacity: 0.5
+  - name: main_railway
+    zoom: [16, 16]
+    filter: ${railway = 'rail' and service is NULL}
+    symbolizers:
+    - line:
+        stroke-color: '#a3789a'
+        stroke-width: 1
+        stroke-dasharray: '1.5 1.5'
+        stroke-opacity: 0.5
+  - name: main_railway
+    zoom: [14, 15]
+    filter: ${railway = 'rail' and service is NULL}
+    symbolizers:
+    - line:
+        stroke-color: '#a3789a'
+        stroke-width: 1
+        stroke-dasharray: '1.5 1.5'
+        stroke-opacity: 0.5
+  - name: main_railway
+    zoom: [12, 13]
+    filter: ${railway = 'rail' and service is NULL}
+    symbolizers:
+    - line:
+        stroke-color: '#a3789a'
+        stroke-width: 0.8
+        stroke-dasharray: '1.5 1.5'
+        stroke-opacity: 0.5
+  - name: service_railway
+    zoom: [17, 18]
+    filter: ${railway = 'rail' and service = 'yard'}
+    symbolizers:
+    - line:
+        stroke-color: '#8b628c'
+        stroke-width: 1.5
+        stroke-dasharray: '1.5 1.5'
+        stroke-opacity: 0.5
